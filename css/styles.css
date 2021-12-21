@@ -31,6 +31,11 @@ body {
 
 /* header */
 
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .heading {
   background-color: var(--wite-color);
   color: var(--primary-text-color);
@@ -45,7 +50,7 @@ body {
   margin-right: auto;
   width: 1170px;
   /* outline: 2px solid tomato; */
-  background-color: turquoise;
+  /* background-color: turquoise; */
 }
 
 /* убераємо підкреслення у посилань */
@@ -63,6 +68,7 @@ body {
 /* main */
 
 .logo {
+  margin-right: 93px;
   color: var(--primary-text-color);
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -82,8 +88,16 @@ body {
 }
 
 /* site-nav */
+.site-nav {
+  display: flex;
+  padding-left: 0;
+}
 
-.site-nav a {
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav .site-nav a {
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -105,6 +119,15 @@ body {
 }
 
 /* auth-nav */
+.auth-nav {
+  display: flex;
+  margin-left: 331px;
+  padding-left: 0;
+}
+
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
 
 .auth-nav a {
   color: var(--title-text-color);
@@ -125,7 +148,7 @@ body {
   color: var(--wite-color);
   margin-top: 0;
   margin-bottom: 30px;
-  background-color: violet;
+  /* background-color: violet; */
 
   font-weight: 900;
   font-size: 44px;
@@ -159,7 +182,16 @@ body {
 
 /* features */
 
-.features {
+.features-item {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.features-item .item + .item {
+  margin-left: 30px;
+}
+. .features {
   background-color: var(--background-features-work-color);
 }
 
@@ -170,8 +202,8 @@ body {
 
 .features-title {
   color: var(--primary-text-color);
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 94px;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -197,8 +229,19 @@ body {
   background-color: var(--background-features-work-color);
 }
 
+.work-list {
+  display: flex;
+  padding-left: 0;
+}
+
+.work-list .item + .item {
+  margin-left: 30px;
+}
+
 .work-title {
   color: var(--primary-text-color);
+  margin-top: 94px;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -213,8 +256,21 @@ body {
   background-color: var(--background-team-color);
 }
 
+.tiam-list {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 94px;
+}
+
+.tiam-list .item + .item {
+  margin-left: 30px;
+}
+
 .tiam-title {
   color: var(--primary-text-color);
+  margin-top: 94px;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -224,6 +280,8 @@ body {
 
 .tiam-name {
   color: var(--primary-text-color);
+  margin-top: 30px;
+  margin-bottom: 10;
 
   font-weight: 500;
   font-size: 16px;
@@ -233,6 +291,8 @@ body {
 
 .tiam-name-title {
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 
   font-size: 16px;
   line-height: 1.8;
@@ -261,7 +321,9 @@ body {
 }
 
 .logo-footer {
+  display: block;
   color: var(--wite-color);
+  margin-bottom: 20px;
 
   font-family: Raleway;
   font-weight: 700;
@@ -298,12 +360,27 @@ body {
   letter-spacing: 0.03em;
 }
 
+.address-list {
+  padding-left: 0;
+}
+
+.page-footer-list {
+  margin-left: 60px;
+}
+
 /* портфоліо фільтр */
+
+.mainly h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .filter button {
   color: var(--primary-text-color);
   background-color: var(--background-buttons-color);
   cursor: pointer;
+  margin-top: 94px;
+  margin-bottom: 34px;
 
   font-family: inherit;
   font-weight: 500;
@@ -323,6 +400,8 @@ body {
 
 .projeck {
   color: var(--primary-text-color);
+  margin-top: 20px;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
@@ -332,6 +411,8 @@ body {
 
 .projeck-title {
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 
   font-size: 16px;
   line-height: 1.8;

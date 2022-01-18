@@ -16,6 +16,20 @@
   --background-buttons-color: rgba(245, 244, 250, 1);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   color: var(--primary-text-color);
 
@@ -44,6 +58,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
+  /* width: 1600px; */
+  height: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .container {
@@ -60,6 +78,7 @@ body {
 
 .heading a {
   text-decoration: none;
+  color: var(--primary-text-color);
 }
 
 /* прибираємо крапки у перелічуваннях */
@@ -144,13 +163,14 @@ body {
 /* hero */
 .hero {
   background-color: var(--background-hero-footer-color);
-  text-align: center;
+  /* text-align: center; */
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 
 .hero-title {
   color: var(--wite-color);
-  margin-top: 0;
-  margin-bottom: 30px;
+
   /* background-color: violet; */
 
   font-weight: 900;
@@ -159,6 +179,14 @@ body {
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  /* display: block; */
+  text-align: center;
+  width: 696px;
+  height: 120px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
 }
 
 .hero-button:hover,
@@ -181,35 +209,37 @@ body {
   /* align-items: center; */
   /* text-align: center; */
   letter-spacing: 0.06em;
+
+  display: block;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 250px;
+  height: 50px;
 }
 
 /* features */
 
-.features-heading {
-  opacity: 0;
+.features {
+  background-color: var(--background-features-work-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features-item {
   display: flex;
   justify-content: center;
-  padding-left: 0;
+  /* padding-left: 0; */
 }
 
 .features-item .item + .item {
   margin-left: 30px;
 }
-.features {
-  background-color: var(--background-features-work-color);
-}
-
-.features h2 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 
 .features-title {
   color: var(--primary-text-color);
-  margin-top: 94px;
+
+  margin-top: 0px;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -234,6 +264,7 @@ body {
 
 .work {
   background-color: var(--background-features-work-color);
+  padding-bottom: 94px;
 }
 
 .work-list {
@@ -247,7 +278,7 @@ body {
 
 .work-title {
   color: var(--primary-text-color);
-  margin-top: 94px;
+  margin-top: 0px;
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -261,12 +292,12 @@ body {
 
 .tiam {
   background-color: var(--background-team-color);
+  padding-bottom: 94px;
 }
 
 .tiam-list {
   display: flex;
   padding-left: 0;
-  margin-bottom: 94px;
 }
 
 .tiam-list .item + .item {
@@ -275,7 +306,7 @@ body {
 
 .tiam-title {
   color: var(--primary-text-color);
-  margin-top: 94px;
+  margin-top: 0px;
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -287,8 +318,10 @@ body {
 
 .tiam-name {
   color: var(--primary-text-color);
-  margin-top: 30px;
-  margin-bottom: 10;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
   text-align: center;
 
   font-weight: 500;
@@ -312,6 +345,8 @@ body {
 
 .page-footer {
   background-color: var(--background-hero-footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .page-footer ul {
@@ -373,20 +408,28 @@ body {
   padding-left: 0;
 }
 
-/* портфоліо фільтр */
-
-.mainly-heading {
-  opacity: 0;
+.addres-li {
+  margin-bottom: 9px;
 }
+
+/* portfolio */
+
+.container-portfolio {
+  padding-bottom: 94px;
+}
+
+/* портфоліо фільтр */
 
 .mainly h1 {
   margin-top: 0;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 .filter {
   display: flex;
   justify-content: center;
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 .filter .item + .item {
@@ -397,8 +440,8 @@ body {
   color: var(--primary-text-color);
   background-color: var(--background-buttons-color);
   cursor: pointer;
-  margin-top: 94px;
-  margin-bottom: 34px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 
   font-family: inherit;
   font-weight: 500;
@@ -422,26 +465,31 @@ body {
 }
 
 .list-portfolio .item:not(:nth-child(3n + 1)) {
-  margin-left: 15px;
-}
-
-.list-portfolio .item:nth-child(n + 7) {
-  margin-bottom: 94px;
+  margin-left: 30px;
+  /* border: 0px; */
 }
 
 .list-portfolio .item:nth-child(-n + 6) {
   margin-bottom: 30px;
+  /* border: 0px; */
 }
 
-.list-portfolio .item {
+.description {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card {
+  display: block;
 }
 
 .projeck {
   color: var(--primary-text-color);
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -460,11 +508,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.mainly {
-  background-color: var(--background-features-work-color);
-}
-
 .mainly ul {
   list-style: none;
-  padding-left: 0;
+  padding-left: 0px;
 }

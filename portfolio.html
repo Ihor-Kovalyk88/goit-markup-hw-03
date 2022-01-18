@@ -42,7 +42,7 @@
     <main class="mainly">
        
         <section>
-            <h1 class="mainly-heading">Проекты</h1>
+            <h1 class="visually-hidden">Проекты</h1>
             <!-- Фільтр -->
             <div class="container ">
             <ul class="filter list">
@@ -54,52 +54,71 @@
             </ul>
             </div>
             <!-- Портфоліо -->
-            <div class="container">
+            <div class="container container-portfolio">
            <ul class="list list-portfolio">
                <li class="item">
-                   <img src="./images/crak.jpg" alt="Ноутбук с фотографией Веб-сайта" width="370">
-                   <h2 class="projeck">Технокряк</h2>
-                   <p class="projeck-title">Веб-сайт</p>
+                   <img class="card" src="./images/crak.jpg" alt="Ноутбук с фотографией Веб-сайта" width="370">
+                   <div class="description">
+                        <h2 class="projeck">Технокряк</h2>
+                        <p class="projeck-title">Веб-сайт</p>
+                    </div>
+                   
                </li>
                <li class="item">
-                   <img src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star" width="370">
-                   <h2 class="projeck">Постер New Orlean vs Golden Star</h2>
-                   <p class="projeck-title">Дизайн</p>
+                   <img class="card" src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                   <div class="description">
+                        <h2 class="projeck">Постер New Orlean vs Golden Star</h2>
+                        <p class="projeck-title">Дизайн</p>
+                   </div>
+                </li>
+               <li class="item">
+                   <img class="card" src="./images/seafood.jpg" alt=" Название ресторана seafood" width="370">
+                   <div class="description">
+                        <h2 class="projeck">Ресторан Seafood</h2>
+                        <p class="projeck-title">Приложение</p>
+                   </div>                 
                </li>
                <li class="item">
-                   <img src="./images/seafood.jpg" alt=" Название ресторана seafood" width="370">
-                   <h2 class="projeck">Ресторан Seafood</h2>
-                   <p class="projeck-title">Приложение</p>
+                   <img class="card" src="./images/prime.jpg" alt="Гарнитура" width="370">
+                   <div class="description">
+                        <h2 class="projeck">Проект Prime</h2>
+                        <p class="projeck-title">Маркетинг</p>
+                   </div>
+                </li>
+               <li class="item">
+                   <img class="card" src="./images/box.jpg" alt="Две коробки" width="370">
+                   <div class="description">
+                        <h2 class="projeck">Проект Boxes</h2>
+                        <p class="projeck-title">Приложение</p>
+                   </div>
                </li>
                <li class="item">
-                   <img src="./images/prime.jpg" alt="Гарнитура" width="370">
-                   <h2 class="projeck">Проект Prime</h2>
-                   <p class="projeck-title">Маркетинг</p>
+                   <img class="card"g src="./images/borders.jpg" alt="Монитор с фотографией Веб-сайта" width="370">
+                   <div class="description">
+                        <h2 class="projeck">Inspiration has no Borders</h2>
+                        <p class="projeck-title">Веб-сайт</p>
+                   </div>
                </li>
                <li class="item">
-                   <img src="./images/box.jpg" alt="Две коробки" width="370">
-                   <h2 class="projeck">Проект Boxes</h2>
-                   <p class="projeck-title">Приложение</p>
+                   <img class="card" src="./images/edition.jpg" alt="Откытый журнал" width="370">
+                   <div class="description">
+                        <h2 class="projeck">Издание Limited Edition</h2>
+                        <p class="projeck-title">Дизайн</p>
+                   </div>
                </li>
                <li class="item">
-                   <img src="./images/borders.jpg" alt="Монитор с фотографией Веб-сайта" width="370">
-                   <h2 class="projeck">Inspiration has no Borders</h2>
-                   <p class="projeck-title">Веб-сайт</p>
+                   <img class="card" src="./images/lab.jpg" alt="Бирка LAB EL TAG">
+                   <div class="description">
+                        <h2 class="projeck">Проект LAB</h2>
+                        <p class="projeck-title">Маркетинг</p>
+                   </div>
                </li>
                <li class="item">
-                   <img src="./images/edition.jpg" alt="Откытый журнал" width="370">
-                   <h2 class="projeck">Издание Limited Edition</h2>
-                   <p class="projeck-title">Дизайн</p>
-               </li>
-               <li class="item">
-                   <img src="./images/lab.jpg" alt="Бирка LAB EL TAG">
-                   <h2 class="projeck">Проект LAB</h2>
-                   <p class="projeck-title">Маркетинг</p>
-               </li>
-               <li class="item">
-                   <img src="./images/growing.jpg" alt="Ноутбук с фотографией Веб-сайта" width="370">
-                   <h2 class="projeck">Growing Business</h2>
-                   <p class="projeck-title">Приложение</p>
+                   <img class="card" src="./images/growing.jpg" alt="Ноутбук с фотографией Веб-сайта" width="370">
+                   <div class="description">
+                        <h2 class="projeck">Growing Business</h2>
+                        <p class="projeck-title">Приложение</p>
+                   </div>
                </li>
             </ul>
             </div>
@@ -114,8 +133,8 @@
     
             <address>
                 <ul class="list address-list">
-                    <li><a href="" class="address">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li><a href="mailto:info@devstudio.com" class="footer-address">info@devstudio.com</a></li>
+                    <li class="addres-li"><a href="" class="address">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="addres-li"><a href="mailto:info@devstudio.com" class="footer-address">info@devstudio.com</a></li>
                     <li><a href="tel:+380961111111" class="footer-address">+38 096 111 11 11</a></li>
                 </ul>
     

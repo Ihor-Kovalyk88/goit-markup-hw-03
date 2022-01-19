@@ -232,6 +232,10 @@ body {
   /* padding-left: 0; */
 }
 
+.description-item {
+  min-width: 270px;
+}
+
 .features-item .item + .item {
   margin-left: 30px;
 }
@@ -292,6 +296,7 @@ body {
 
 .tiam {
   background-color: var(--background-team-color);
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -316,11 +321,15 @@ body {
   letter-spacing: 0.03em;
 }
 
+.description-tiam {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .tiam-name {
   color: var(--primary-text-color);
-  padding-top: 30px;
-  padding-bottom: 10px;
-  margin-bottom: 0px;
+
+  margin-bottom: 10px;
   margin-top: 0px;
   text-align: center;
 
@@ -414,7 +423,8 @@ body {
 
 /* portfolio */
 
-.container-portfolio {
+.section {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -428,7 +438,7 @@ body {
 .filter {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
+  /* padding-top: 0px; */
   margin-bottom: 50px;
 }
 
@@ -442,6 +452,7 @@ body {
   cursor: pointer;
   margin-top: 0px;
   margin-bottom: 0px;
+  padding: 6px 22px;
 
   font-family: inherit;
   font-weight: 500;
@@ -479,8 +490,7 @@ body {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
 }
 
 .card {
